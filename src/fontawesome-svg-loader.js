@@ -29,7 +29,7 @@ function createElementFromString(html) {
 
 export const fasvgLoader = () => {
     const options = {
-        url: (window.fontAwesomeURL && window.fontAwesomeURL.length) ? window.fontAwesomeURL : 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/svgs',
+        url: (window.fontAwesomeURL && window.fontAwesomeURL.length) ? window.fontAwesomeURL : 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5',
         fetch: {
             cache: 'force-cache'
         }
