@@ -1,5 +1,5 @@
 {
-  "name": "fontawesome-svg-loader",
+  "name": "@floatwork/fontawesome-svg-loader",
   "version": "0.0.0",
   "description": "Loads Font Awesome SVG icons and inlines them in place of the default markup",
   "main": "dist/fontawesome-svg-loader.js",
