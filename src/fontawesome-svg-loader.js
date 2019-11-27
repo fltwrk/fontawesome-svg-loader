@@ -1,4 +1,6 @@
-const helperClasses: string[] = [
+import '@fortawesome/fontawesome-free/css/svg-with-js.min.css';
+
+const helperClasses = [
   // Sizing Icons
   'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x',
   // Fixed Width Icons
@@ -17,16 +19,15 @@ const helperClasses: string[] = [
   'swap-opacity'
 ];
 
-
-function createElementFromString(html): Element {
-  const template: HTMLElement = document.createElement('div');
+function createElementFromString(html) {
+  const template = document.createElement('div');
   html = html.trim();
   template.innerHTML = html;
 
   return template.children[0];
 }
 
-const defaultOptions: any = {
+const defaultOptions = {
   url: `https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/svgs`,
   fetch: {
     cache: 'force-cache'
@@ -36,7 +37,7 @@ const defaultOptions: any = {
 export const fasvgLoader = (userOptions = {}) => {
   const options = {...defaultOptions, ...userOptions};
 
-  const faElems = document.querySelectorAll<HTMLElement>('i.fab, i.fad, i.fal, i.far, i.fas');
+  const faElems = document.querySelectorAll('i.fab, i.fad, i.fal, i.far, i.fas');
 
   Array.from(faElems).forEach(async faElem => {
     // Filter classes not prefixed with fa-, as well as all Font Awesome helpers
@@ -62,7 +63,7 @@ export const fasvgLoader = (userOptions = {}) => {
     }
 
     const faBasename = faIcon[0].replace(/^fa-/, '');
-    const faUrl = `${options.svgurl.replace(/\/$/, '')}/${faStyle}/${faBasename}.svg`;
+    const faUrl = `${options.url.replace(/\/$/, '')}/${faStyle}/${faBasename}.svg`;
 
     const response = await fetch(
       faUrl,
@@ -84,4 +85,6 @@ export const fasvgLoader = (userOptions = {}) => {
   });
 };
 
-(<any>window).fasvgLoader;
+document.addEventListener('DOMContentLoaded', function() {
+  fasvgLoader();
+});

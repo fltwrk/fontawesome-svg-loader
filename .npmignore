@@ -14,6 +14,7 @@ shrinkwrap.yaml
 .circleci/
 .editorconfig
 demo/
+demo.html
 src/
 test/
 types/

@@ -1,36 +1,56 @@
-//@ts-check
+const { resolve } = require('path');
 
-'use strict';
-
-const path = require('path');
-
-/**@type {import('webpack').Configuration}*/
-const config = {
-  target: 'web',
-  entry: './src/fontawesome-svg-loader.ts',
+module.exports = {
+  entry: [
+    resolve(__dirname, 'src/fontawesome-svg-loader.js')
+  ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'fontawesome-svg-loader.js',
-    libraryTarget: 'umd',
-    devtoolModuleFilenameTemplate: '../[resource-path]'
+    path: resolve(__dirname, 'dist'),
+    filename: 'fontawesome-svg-loader.js'
   },
-  devtool: 'source-map',
-  resolve: {
-    extensions: ['.ts', '.js']
+  externals: {
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'ts-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  targets: {
+                    browsers: [
+                      '> 2%',
+                      'last 2 versions',
+                      'Firefox ESR',
+                      'IE 11'
+                    ]
+                  },
+                  useBuiltIns: 'usage'
+                }
+              ]
+            ],
+            env: {
+              production: {
+                presets: [
+                  'minify'
+                ]
+              }
+            },
           }
-        ]
+        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+            'style-loader',
+            'css-loader'
+          ]
       }
     ]
   }
 };
-
-module.exports = config;
