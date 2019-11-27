@@ -1,4 +1,5 @@
 import '@fortawesome/fontawesome-free/css/svg-with-js.min.css';
+import './style.css';
 
 const helperClasses = [
     // Sizing Icons
