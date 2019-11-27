@@ -18,6 +18,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
+            plugins: [
+              require('@babel/plugin-transform-runtime'),
+              require('babel-plugin-minify-dead-code-elimination'),
+              require('babel-plugin-minify-simplify'),
+            ],
             presets: [
               [
                 '@babel/preset-env',
@@ -30,7 +35,8 @@ module.exports = {
                       'IE 11'
                     ]
                   },
-                  useBuiltIns: 'usage'
+                  useBuiltIns: 'usage',
+                  corejs: 3
                 }
               ]
             ],
