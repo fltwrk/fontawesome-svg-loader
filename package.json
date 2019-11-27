@@ -42,9 +42,10 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode none --watch",
-    "lint": "tslint --project .",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
     "prepublishOnly": "npm run lint && npm run build",
-    "test": "npm run lint"
+    "test": "npm run test"
   },
   "husky": {
     "hooks": {
