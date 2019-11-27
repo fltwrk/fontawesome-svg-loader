@@ -13,12 +13,14 @@ shrinkwrap.yaml
 *.map
 .circleci/
 .editorconfig
+.eslintrc
 demo/
 demo.html
 src/
 test/
 types/
 tsconfig.tsbuildinfo
+webpack.config.js
 
 # project specific
 test.js
