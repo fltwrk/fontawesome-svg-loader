@@ -24,14 +24,6 @@ Include script and stylesheet in your website
 <script src="https://cdn.jsdelivr.net/npm/@floatwork/fontawesome-svg-loader@latest/dist/fontawesome-svg-loader.js" charset="utf-8" defer></script>
 ```
 
-Next, you need to invoke the script
-
-```js
-document.addEventListener('DOMContentLoaded', function() {
-  fasvgLoader();
-});
-```
-
 Use the Font Awesome markup like you usually would, the library will take care of the rest
 
 ```html
