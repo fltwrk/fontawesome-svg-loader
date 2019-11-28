@@ -3,6 +3,7 @@
 [![npm](https://flat.badgen.net/npm/license/@floatwork/fontawesome-svg-loader)](https://www.npmjs.org/package/@floatwork/fontawesome-svg-loader)
 [![npm](https://flat.badgen.net/npm/v/@floatwork/fontawesome-svg-loader)](https://www.npmjs.org/package/@floatwork/fontawesome-svg-loader)
 [![CircleCI](https://flat.badgen.net/circleci/github/fltwrk/fontawesome-svg-loader)](https://circleci.com/gh/fltwrk/fontawesome-svg-loader)
+[![David](https://flat.badgen.net/david/dep/fltwrk/fontawesome-svg-loader)](https://david-dm.org/fltwrk/fontawesome-svg-loader)
 
 Loads Font Awesome SVG icons and inlines them in place of the default markup
 
