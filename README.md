@@ -16,7 +16,7 @@ Include the script on your website
 
 ```html
 <!-- Loader script -->
-<script src="https://cdn.jsdelivr.net/npm/@floatwork/fontawesome-svg-loader@latest/dist/fontawesome-svg-loader.js" charset="utf-8" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@floatwork/fontawesome-svg-loader@latest/dist/fontawesome-svg-loader.js" defer></script>
 
 <!-- Fallback when JavaScript is not available -->
 <noscript>
