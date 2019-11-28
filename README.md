@@ -27,7 +27,7 @@ Include the script on your website
 Use the Font Awesome markup like you usually would, the library will take care of the rest
 
 ```html
-<i class="fas fa-feather-alt"></i>
+<i class="fas fa-paper-plane"></i>
 ```
 
 ## Authors
