@@ -30,6 +30,11 @@ Use the Font Awesome markup like you usually would, the library will take care o
 <i class="fas fa-feather-alt"></i>
 ```
 
+## Authors
+
+- [Jan T. Sott](https://github.com/idleberg/)
+- [floatwork_](https://github.com/fltwrk/)
+
 ## License
 
 This work is licensed under [The MIT License](https://opensource.org/licenses/MIT)
