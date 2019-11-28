@@ -30,20 +30,6 @@ Use the Font Awesome markup like you usually would, the library will take care o
 <i class="fas fa-feather-alt"></i>
 ```
 
-### Options
-
-#### options.url
-
-Type: `string`
-
-Provide URL to the SVGs folder of Font Awesome v5. Defaults to [jsDelivr](https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/svgs/).
-
-#### options.fetch
-
-Type: `object`
-
-Options for `fetch()`, see [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options) for details. Defaults to `{cache: 'force-cache'}`
-
 ## License
 
 This work is licensed under [The MIT License](https://opensource.org/licenses/MIT)
