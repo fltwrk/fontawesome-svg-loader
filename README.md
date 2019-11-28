@@ -6,6 +6,8 @@
 
 Loads Font Awesome SVG icons and inlines them in place of the default markup
 
+[Demo Time](https://codepen.io/floatwork711/full/NWWQBoj) 🙌
+
 ## Installation
 
 `npm install @floatwork/fontawesome-svg-loader -S`
