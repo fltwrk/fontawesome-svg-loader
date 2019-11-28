@@ -18,11 +18,17 @@ Include the script on your website
 
 ```html
 <!-- Loader script -->
-<script src="https://cdn.jsdelivr.net/npm/@floatwork/fontawesome-svg-loader@latest/dist/fontawesome-svg-loader.js" defer></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@floatwork/fontawesome-svg-loader@latest/dist/fontawesome-svg-loader.js"
+  defer
+></script>
 
 <!-- Fallback when JavaScript is not available -->
 <noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+  />
 </noscript>
 ```
 
