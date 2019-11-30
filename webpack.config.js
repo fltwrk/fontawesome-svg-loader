@@ -34,9 +34,7 @@ module.exports = {
                       'Firefox ESR',
                       'IE 11'
                     ]
-                  },
-                  useBuiltIns: 'usage',
-                  corejs: 3
+                  }
                 }
               ]
             ],
