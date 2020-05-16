@@ -15,7 +15,7 @@ const helperClasses = [
     // Bordered + Pulled Icons
     'border', 'pull-right', 'pull-left',
     // Stacked Icons
-    'fa-stack', 'fa-stack-1x', 'fa-stack-2x', 'fa-inverse',
+    'stack', 'stack-1x', 'stack-2x', 'inverse',
     // Swapping Layer Opacity (Duotone Icons)
     'swap-opacity'
 ];
@@ -38,12 +38,12 @@ export const fasvgLoader = () => {
 
     const faElems = document.querySelectorAll('i.fab, i.fad, i.fal, i.far, i.fas');
 
-    Array.from(faElems).forEach(async faElem => {
+    Array.from(faElems).map(async faElem => {
         // Filter classes not prefixed with fa-, as well as all Font Awesome helpers
         const faIcon = Array.from(faElem.classList).filter(className => {
             return (
                 className.startsWith('fa-') &&
-      !helperClasses.includes(className.replace(/^fa-/, ''))
+                !helperClasses.includes(className.replace(/^fa-/, ''))
             );
         });
 
